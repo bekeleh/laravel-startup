@@ -11,7 +11,7 @@
                 </a>
             </li>
             <!-- fetch permission like can users_manage -->
-            @can('users.index')
+            @can('users_manage')
             <li class="{{ $request->segment(1) == 'home' ? 'active' : '' }}">
                 <a href="{{ url('/') }}">
                     <i class="fa fa-wrench"></i>
